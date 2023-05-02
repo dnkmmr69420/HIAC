@@ -1,0 +1,7 @@
+#!/bin/bash
+
+input="/run/host/etc/apkfile"
+while IFS= read -r line
+do
+  sudo apk add "$line"
+done < "$input"
