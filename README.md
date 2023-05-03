@@ -9,6 +9,12 @@ Highly Integrated Alpine Container
 distrobox create -i alpine:latest -n container-name -p
 ```
 
+### Enter the container
+
+```bash
+distrobox enter container-name
+```
+
 ### Run the script
 
 ```bash
