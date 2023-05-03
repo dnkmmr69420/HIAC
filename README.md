@@ -5,14 +5,18 @@ Highly Integrated Alpine Container
 
 ### Make a alpine linux container
 
+replace `hiac-container` with a name you want to name your container
+
 ```bash
-distrobox create -i alpine:latest -n container-name -p
+distrobox create -i alpine:latest -n hiac-container -p
 ```
 
 ### Enter the container
 
+replace `hiac-container` with the name you used to create the container if you used a different name
+
 ```bash
-distrobox enter container-name
+distrobox enter hiac-container
 ```
 
 ### Run the script
