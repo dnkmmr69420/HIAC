@@ -24,3 +24,11 @@ distrobox enter hiac-container
 ```bash
 bash <(curl -s https://raw.githubusercontent.com/dnkmmr69420/HIAC/main/setup.sh)
 ```
+
+## Optional steps
+
+Run this for [adw-gtk3](https://github.com/lassekongo83/adw-gtk3) to be installed for the container
+
+```bash
+bash <(curl -s https://raw.githubusercontent.com/dnkmmr69420/HIAC/main/install-adw-gtk3.sh)
+```
