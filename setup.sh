@@ -16,8 +16,5 @@ sudo apk add gcompat xz
 sudo ln -s /usr/bin/distrobox-host-exec /usr/bin/distrobox
 [ -f /run/host/usr/bin/podman ] && sudo ln -s /usr/bin/distrobox-host-exec /usr/bin/podman
 [ -f /run/host/usr/bin/docker ] && sudo ln -s /usr/bin/distrobox-host-exec /usr/bin/docker
-[ -f /run/host/usr/bin/dnf ] && sudo ln -s /usr/bin/distrobox-host-exec /usr/bin/dnf
-[ -f /run/host/usr/bin/zypper ] && sudo ln -s /usr/bin/distrobox-host-exec /usr/bin/zypper
-[ -f /run/host/usr/bin/apt ] && sudo ln -s /usr/bin/distrobox-host-exec /usr/bin/apt
-[ -f /run/host/usr/bin/apt-get ] && sudo ln -s /usr/bin/distrobox-host-exec /usr/bin/apt-get
 [ -f /run/host/usr/bin/transactional-update ] && sudo ln -s /usr/bin/distrobox-host-exec /usr/bin/transactional-update
+[ -f /run/host/usr/bin/rpm-ostree ] && sudo ln -s /usr/bin/distrobox-host-exec /usr/bin/rpm-ostree
