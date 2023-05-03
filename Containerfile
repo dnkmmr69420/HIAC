@@ -5,6 +5,6 @@ LABEL com.github.containers.toolbox="true" \
       summary="A very highly intergrated distrobox or toolbox container" \
       maintainer="dnkmmr69420"
       
-RUN   apk update \
-      apk upgrade
+RUN   apk update ; \
+      apk upgrade ; \
       apk add xz gcompat
