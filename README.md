@@ -25,7 +25,9 @@ distrobox enter hiac-container
 bash <(curl -s https://raw.githubusercontent.com/dnkmmr69420/HIAC/main/setup.sh)
 ```
 
-## Optional steps
+# Optional steps
+
+## GNOME related
 
 ### Adw-gtk3
 
