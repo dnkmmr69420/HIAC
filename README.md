@@ -27,8 +27,24 @@ bash <(curl -s https://raw.githubusercontent.com/dnkmmr69420/HIAC/main/setup.sh)
 
 ## Optional steps
 
+### Adw-gtk3
+
 Run this for [adw-gtk3](https://github.com/lassekongo83/adw-gtk3) to be installed for the container
 
 ```bash
 bash <(curl -s https://raw.githubusercontent.com/dnkmmr69420/HIAC/main/install-adw-gtk3.sh)
+```
+
+### Clock
+
+#### To set clock to 12h type
+
+```bash
+gsettings set org.gnome.desktop.interface clock-format 12h
+```
+
+#### for 24h
+
+```bash
+gsettings set org.gnome.desktop.interface clock-format 24h
 ```
