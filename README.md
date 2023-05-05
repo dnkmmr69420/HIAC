@@ -70,7 +70,7 @@ sudo apk add librsvg
 ```
 ### neofetch showing info of host instead of container
 
-This may break the container so only do this if you find it necesarry. Report bugs if you have problems with this so I can make a list of what this change will break.
+This may break the container so only do this if you find it necesarry. Report bugs if you have problems with this so I can make a list of what this action will break.
 
 ```bash
 sudo mv /etc/os-release /etc/os-release.backup ; sudo ln -s /run/host/etc/os-release /etc/os-release
