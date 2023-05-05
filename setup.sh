@@ -19,3 +19,20 @@ sudo ln -s /usr/bin/distrobox-host-exec /usr/bin/distrobox
 [ -f /run/host/usr/bin/docker ] && sudo ln -s /usr/bin/distrobox-host-exec /usr/bin/docker
 [ -f /run/host/usr/bin/transactional-update ] && sudo ln -s /usr/bin/distrobox-host-exec /usr/bin/transactional-update
 [ -f /run/host/usr/bin/rpm-ostree ] && sudo ln -s /usr/bin/distrobox-host-exec /usr/bin/rpm-ostree
+
+# uhe stands for User Host Execute
+
+sudo tee /usr/bin/uhe <<EOF
+#!/bin/bash
+distrobox-host-exec \$@
+EOF
+
+# rhe stands for Root Host Execute
+
+sudo tee /usr/bin/rhe <<EOF
+#!/bin/bash
+distrobox-host-exec sudo \$@
+EOF
+
+sudo chmod a+x /usr/bin/uhe
+sudo chmod a+x /usr/bin/rhe
