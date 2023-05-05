@@ -11,6 +11,12 @@ replace `hiac-container` with a name you want to name your container
 distrobox create -i alpine:latest -n hiac-container -p
 ```
 
+Seperated home container if you want to keep dot files and other configs sepearated
+
+```bash
+distrobox create -i alpine:latest -n hiac-container -p -H ~/container-home-dir
+```
+
 ### Enter the container
 
 replace `hiac-container` with the name you used to create the container if you used a different name
