@@ -29,8 +29,6 @@ bash <(curl -s https://raw.githubusercontent.com/dnkmmr69420/HIAC/main/setup.sh)
 
 - Adds `uhe` for executing applications as normal user on the host and `rhe` for executing applications as root on the host. It does the same thing as `distrobox-host-exec` but you type less letters
 
-- Symlinks /run/host/etc/os-release to /etc/os-release in the container to trick fetch programs that it is the host OS
-
 - Creates several symlinks against /usr/bin/distrobox-host-exec for fetch programs to detect host package count
 
 - Installs `gcompat` for glibc support and `xz` for tar.xz support
