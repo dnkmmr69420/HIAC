@@ -24,14 +24,26 @@ sudo ln -s /usr/bin/distrobox-host-exec /usr/bin/distrobox
 
 sudo tee /usr/bin/uhe <<EOF
 #!/bin/bash
-distrobox-host-exec \$@
+if [ "\$#" -eq 0 ]
+then
+  echo "No arguments supplied. Put the command you want to execute as an argument."
+  exit 1
+else
+  distrobox-host-exec \$@
+fi
 EOF
 
 # rhe stands for Root Host Execute
 
 sudo tee /usr/bin/rhe <<EOF
 #!/bin/bash
-distrobox-host-exec sudo \$@
+if [ "\$#" -eq 0 ]
+then
+  echo "No arguments supplied. Put the command you want to execute as an argument."
+  exit 1
+else
+  distrobox-host-exec sudo \$@
+fi
 EOF
 
 sudo chmod a+x /usr/bin/uhe
