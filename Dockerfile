@@ -9,8 +9,6 @@ RUN   apk update && \
       apk upgrade && \
       apk add xz gcompat
 
-RUN   ln -sf /run/host/etc/os-release /etc/os-release
-
 RUN   ln -sf /bin/sh /usr/bin/sh && \
       ln -sf /bin/bash /usr/bin/bash
 
