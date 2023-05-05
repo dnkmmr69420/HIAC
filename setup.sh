@@ -3,8 +3,6 @@ echo "Setting up container"
 sudo ln -s /bin/sh /usr/bin/sh
 sudo ln -s /bin/bash /usr/bin/bash
 sudo ln -s /run/host /hstsys
-sudo mv /etc/os-release /etc/os-release.backup
-sudo ln -s /run/host/etc/os-release /etc/os-release
 sudo apk add gcompat xz
 [ -f /run/host/usr/bin/flatpak ] && sudo ln -s /usr/bin/distrobox-host-exec /usr/bin/flatpak
 [ -f /run/host/usr/bin/rpm ] && sudo ln -s /usr/bin/distrobox-host-exec /usr/bin/rpm
