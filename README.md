@@ -60,3 +60,11 @@ gsettings set org.gnome.desktop.interface clock-format 12h
 ```bash
 gsettings set org.gnome.desktop.interface clock-format 24h
 ```
+
+## Other
+
+### you need librsvg to run certain applications like tilix
+
+```bash
+sudo apk add librsvg
+```
